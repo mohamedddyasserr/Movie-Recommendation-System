@@ -37,7 +37,8 @@ We use the **MovieLens 100K dataset**, which contains:
    - **SVD (Truncated SVD)** → learns latent factors for users and items.  
 
 4. **Evaluation**  
-   - Used **Precision@5** and **Recall@5** to measure model effectiveness.  
+   - Used **Precision@5** and **Recall@5** to measure model effectiveness.
+   - Evaluation was computed **across all users**, not just a single example.
 
 ---
 
@@ -57,7 +58,8 @@ We use the **MovieLens 100K dataset**, which contains:
 - All models provide meaningful recommendations.  
 - **User-CF** works but is the weakest.  
 - **Item-CF** improves precision and recall.  
-- **SVD** achieves the best performance, showing the benefit of latent factor models.  
+- **SVD** achieves the best performance, showing the benefit of latent factor models.
+- Since evaluation is done **across all users**, results reflect overall system quality rather than a single user case.  
 - The system demonstrates how collaborative filtering can be effectively applied to movie recommendation tasks.  
 
 ---
